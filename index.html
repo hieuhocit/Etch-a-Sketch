@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,33 @@
     <link rel="stylesheet" href="./style.css">
     <script src="./main.js" defer></script>
 </head>
+
 <body>
-    <div class="container">
-        
+    <h1>Etch-a-Sketch</h1>
+    <div class="wrapper">
+        <div class="settings">
+            <label for="pick-color">Pick Color:
+                <input type="color" name="user-color" id="pick-color" value="#cb342d">
+            </label>
+
+
+            <button data-mode="Color" class="btn mode" id="colorBtn">Color mode</button>
+            <button data-mode="Rainbow" class="btn mode" id="rainbowBtn">Rainbow mode</button>
+            <button data-mode="Eraser" class="btn mode" id="eraserBtn">Eraser</button>
+            <button data-mode="Shading" class="btn mode" id="shadingBtn">Shading</button>
+            <button data-mode="Lighten" class="btn mode" id="lightenBtn">Lighten</button>
+            <button class="btn" id="clearBtn">Clear</button>
+
+            <label for="grid-size">Grid size: <span id="size">16 x 16</span></label>
+            <input type="range" name="grid-size" id="grid-size" min="1" max="64" value="16">
+            <button class="btn" id="gridLineBtn">Grid Line</button>
+
+        </div>
+        <div class="container"></div>
     </div>
+    <footer>
+        <p>Copyright © 2024 Hieuhocit</p>
+    </footer>
 </body>
+
 </html>
