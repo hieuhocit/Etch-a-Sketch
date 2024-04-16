@@ -55,7 +55,7 @@ function paintColor(e) {
             case "Shading":
                 {
                     const rgb = e.target.style.backgroundColor || "rgb(255,255,255)";
-                    let [h, s, l] = rgbToHsl(rgb) || [0, 0, 0];
+                    let [h, s, l] = rgbToHsl(rgb) || [0, 0, 100];
                     l = l - 10;
                     e.target.style.backgroundColor = `hsl(${h}deg,${s}%,${l}%)`;
                 }
